@@ -1,0 +1,19 @@
+.footer {
+width:400px;
+margin: auto;
+}
+
+.footerList {
+width:200px;
+margin: auto;
+}
+
+li {
+display: inline;
+text-decoration:none;
+}
+
+.socialMediaLogo {
+width:35px;
+height:35px;
+}
