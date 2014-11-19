@@ -1,17 +1,20 @@
 body{
-	margin:0px;
+	margin: 0px;
 	background: gray;
 }
 #wrapper{
 	margin-right: auto;
 	margin-left: auto;
 	width: 90%;
+	margin-top: 0px;
 }
 #header{
-	height:175px;
 	position: fixed;
-	width:90%;
+	height:117px;
+	width: 90%;
 	background-color: #CCFFFF;
+	margin-top: -117px;
+	z-index: 2;
 }
 #homeButton{
 	border: black, 2px;
@@ -31,12 +34,6 @@ h1{
 	background-color: orange;
 	font-size: 24px;
 	margin-right: 30px;
-}
-.content {
-	background: #F0F0F0;
-	border: 1px solid #CCC;
-	height: 2000px;
-	margin: 20px auto;
 }
 .Buttons{
 	border:groove 1px white;
@@ -70,8 +67,30 @@ a:link{
 	clear: right;
 }
 #content{
-	background-image: url("hillside.jpg");
+	background-image: url("wko.png");
+	height: 100%;
 	background-repeat: no-repeat;
-	padding-bottom:3000px;
-
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 117px;
+}
+#WKOtext {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 19px;
+	padding: 10px 10px 10px 10px;
+	margin-top: 20px;	
+	margin-left: 20px;
+	margin-right: 5px;
+	background-color: rgba(159,159,159,0.50);
+	color: #FFFFFF;
+	position:relative;
+	width: 600px;
+	float: left;
+	z-index: 1;	
+}
+#newsbox {
+	float: right;
+	background-color: rgba(255,255,255,0.65);
+	margin: 10px 10px 0 0;
 }
