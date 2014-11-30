@@ -233,7 +233,7 @@ class FacebookRequest
       $url = self::appendParamsToUrl($url, $params);
       $params = array();
     }
-
+	
     $connection = self::getHttpClientHandler();
     $connection->addRequestHeader('User-Agent', 'fb-php-' . self::VERSION);
     $connection->addRequestHeader('Accept-Encoding', '*'); // Support all available encodings.
@@ -242,11 +242,11 @@ class FacebookRequest
     if (isset($this->etag)) {
       $connection->addRequestHeader('If-None-Match', $this->etag);
     }
-
+	
     // Should throw `FacebookSDKException` exception on HTTP client error.
     // Don't catch to allow it to bubble up.
     $result = $connection->send($url, $this->method, $params);
-
+	
     static::$requestCount++;
 
     $etagHit = 304 == $connection->getResponseHttpStatusCode();
