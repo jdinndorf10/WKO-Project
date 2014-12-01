@@ -48,14 +48,14 @@ text-decoration: none;
 color:#990099;
 }
 
-body {
-width:800px;
-margin: auto;
-}
-
 .content {
 float:right;
-width:600px;
+width:550px;
 margin:auto;
 margin-bottom:15px;
+}
+
+.homevisiting {
+width:40%;
+margin:auto;
 }

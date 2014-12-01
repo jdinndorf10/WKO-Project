@@ -2,10 +2,11 @@
 <html>
 <head>
 <title>WKO's Programs</title>
-<link  href="footer/footer.css" rel="stylesheet">
+<link href="WKO.css" rel="stylesheet">
 </head>
 <body>
-	<div>
+	<div id = "wrapper">
+		<div class = "homevisiting">
 		<?php
 			$families = (glob("inputs/maternalMother*.txt"));					
 						foreach ($families as $family) {
@@ -39,6 +40,7 @@
 			<p><a href="#">Contact Us</a> | <a href="#">Terms of Use</a> | 
 				<a href="http://wholekidsoutreach.org/wholekids">Site Map</a> | 
 				<a href="#">Privacy Statement</a><br> Copyright &copy; 2014. All Rights Reserved.</p>
+	</div>
 	</div>
 	
 </body>
