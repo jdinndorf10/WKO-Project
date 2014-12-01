@@ -1,6 +1,7 @@
 body{
 	margin: 0px;
-	background: gray;
+	background: grey;
+	
 }
 #wrapper{
 	margin-right: auto;
@@ -12,12 +13,23 @@ body{
 	position: fixed;
 	height:117px;
 	width: 90%;
-	background-color: #606060 ;
+	background-color: #2E79FF;
 	margin-top: -117px;
 	z-index: 2;
 }
 #homeButton{
-	border: black, 2px;
+	border: solid black 2px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 34px;
+	margin-right: 65%;
+	text-align: center;
+	padding: 0 10px 31px 10px;
+	background-color: #2EE2FF;
+}
+#nav {
+	float: right;
+	margin-right: 2%;
+	margin-top: -51px;
 }
 h1{
 	font-size: 32px;
@@ -28,26 +40,17 @@ h1{
 	display: inline;
 	float: left;
 }
-#donate{
-	float: right;
-	display: inline;
-	background-color: orange;
-	font-size: 24px;
-	margin-right: 30px;
-}
 .Buttons{
 	border:groove 1px white;
-	background-color: orange;
-	padding:2px;
+	background-color: rgba(46,255,255,.80);
+	padding: 5px 15px 5px 15px;
 	font-size:24px;
-	font-family: serif;
-	display: inline;
+	font-family: 'Quicksand', sans-serif;
 	text-decoration: none;
-	margin: 3px;
-	float: left;
+	margin-left: 20px;
 }
 .Buttons:hover{
-	background-color: white;
+	background-color: rgba(255,255,255,.80);
 }
 .list{
 	display: inline;
@@ -79,7 +82,7 @@ a:link{
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 19px;
 	padding: 10px 10px 10px 10px;
-	margin-top: 20px;	
+	margin-top: 25px;	
 	margin-left: 20px;
 	margin-right: 5px;
 	background-color: rgba(159,159,159,0.50);
@@ -92,5 +95,27 @@ a:link{
 #newsbox {
 	float: right;
 	background-color: rgba(255,255,255,0.65);
-	margin: 10px 10px 0 0;
+	margin: 25px 15px 0 0;
+}
+#footer {
+	padding: 10px 0 10px 0;
+	width: 100%;
+	margin: auto;
+	background-color: #2E79FF;
+	text-align:center;
+		
+}
+.footerList {
+width:200px;
+margin: auto;
+}
+
+.li1 {
+display: inline;
+text-decoration:none;
+}
+
+.socialMediaLogo {
+width:50px;
+height:50px;
 }
