@@ -10,7 +10,9 @@
 <div id="wrapper">
 	<div id="header">
 		<div id="homeButton">
-			<br>Whole Kids	Outreach
+			<a href="index.html">
+				<br>Whole Kids	Outreach
+			</a>
 		</div>
    <div id="nav">
    		<ul>
