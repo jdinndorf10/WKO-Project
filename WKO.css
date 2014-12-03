@@ -55,12 +55,12 @@ h1{
 .list{
 	display: inline;
 }
-.Buttons:visited{
+.Buttons a:visited{
 	text-decoration: none;
 	color: black;
 	outline: none;
 }
-.Buttons:link{
+.Buttons a:link{
 	text-decoration: none;
 	color: black;
 	outline: none;
@@ -115,12 +115,12 @@ width:35px;
 height:35px;
 }
 
-a.menu:visited {
+.menu a:visited {
 color: black;
 text-decoration: none;
 }
 
-a.menu:hover {
+.menu a:hover {
 text-decoration: none;
 color:#990099;
 }
