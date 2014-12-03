@@ -34,9 +34,9 @@
 		?>			
 			<ul id = "sidebar">			
 			
-				<li class = "menu"><a href="ServiceArea.html"><?= $three ?></a></li>
-				<li class = "menu"><a href="CenterPrograms.php"><?= $one ?></a></li>
-				<li class = "menu"><a href="HomePrograms.php"><?= $two ?></a></li>
+				<li class = "menu"><a class = "program" href="ServiceArea.html"><?= $three ?></a></li>
+				<li class = "menu"><a class = "program" href="CenterPrograms.php"><?= $one ?></a></li>
+				<li class = "menu"><a class = "program" href="HomePrograms.php"><?= $two ?></a></li>
 
 			</ul>
 	</div>

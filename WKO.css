@@ -59,27 +59,33 @@ h1{
 	text-decoration: none;
 	margin-left: 5px;
 }
+
 a.Buttons:hover{
 	background-color: rgba(255,255,255,.80);
 	color:red;
 }
+
 .list{
 	display: inline;
 }
+
 a.Buttons:visited{
 	text-decoration: none;
 	color: black;
 	outline: none;
 }
+
 a.Buttons:link{
 	text-decoration: none;
 	color: black;
 	outline: none;
 }
+
 #links{
 	display: inline;
 	clear: right;
 }
+
 #content {
 	background-image: url('wko.png');
 	height: 600px;
@@ -90,6 +96,7 @@ a.Buttons:link{
 	margin-right: auto;
 	margin-top: 117px;
 }
+
 #WKOtext {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 19px;
@@ -104,6 +111,7 @@ a.Buttons:link{
 	float: left;
 	z-index: 1;	
 }
+
 #newsbox {
 	float: right;
 	background-color: rgba(255,255,255,0.65);
@@ -176,4 +184,18 @@ list-style-type:none;
     top: 60px;
     right: 5px;
     z-index:1;
+}
+
+.program {
+	text-decoration:none;
+	color:black;
+}
+
+a.program:hover {
+	color: orange;
+	text-shadow: 2px 2px black;
+}
+
+.program:visited {
+	color: black;
 }
