@@ -5,20 +5,25 @@
 		<meta charset="utf-8">
 		<link href = "WKO.css" type="text/css" rel="stylesheet">
 		<link href = "HelpNow.css" type="text/css" rel="stylesheet">
+		<link href = "footer.css" type="text/css" rel="stylesheet">
 	</head>
 
 	<body>
 	<div id="wrapper">
 	<div id="header">
 		<div id="homeButton">
-			<img id="img"src="logo.jpg" alt="logo" width="300" height="100">
-			<ul>
-				<li class="list"><a class="Buttons" id="First" href="images/about.html">About</a></li>
-				<li class="list"><a class="Buttons" href="">Contact Us</a></li>
-				<li class="list"><a class="Buttons" href="HelpNow.html">How to Help</a></li>
-				<li class="list"><a id="donate" href="https://www.paypal.com/">Donate Now!</a></li>
-			</ul>
+			<br>Whole Kids	Outreach
 		</div>
+	<div id="nav">
+   		<ul>
+
+				<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
+				<li class="list"><a class="Buttons" href="contact.html">Contact</a></li>
+				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
+				<li class="list"><a class="Buttons" href="volunteer.php">Volunteer</a></li>
+              <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
+		</ul>
+	</div>
 	</div>
     <div id="content">
 		<?php
@@ -33,7 +38,8 @@
 			$_POST["number"] = "";
 			$_POST["address"] = "";
 		?>
-		<div id="para">
+
+		<div id="para" id="left">
 			<h2 id="middle">Volunteer Info</h2>
 			Volunteer opportunities abound at Whole Kids Outreach.
 			New and returning volunteers are welcomed and each is offered a unique learning and social experience. 
@@ -51,29 +57,18 @@
 				<li>community outreach activities for WKO clients who need help with home improvements to improve the safety of their living environments</li>
 				<li>Camp Whole Kids, WKO’s four-week summer day camp</li>
 			</ul>
+			<br><br><a class="link" href="SignUp.php">Click Here to Sign Up</a>
 		</div>
-		<div id="form">
-		<form action = "Volunteer.php" method="post">
-			<h2>Sign Up to Volunteer</h2>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Name: <input type="text" size="20" name="name"/><br>
-			Phone Number: <input type="text" size="20" name="number"/><br>
-			Email Address:  <input type="text" size="20" name="address"/><br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="submit" value="Submit"/>
-		</form>
 		</div>
-    </div>
-	<div class = "footer">
-		<ul class = "footerList">	
-			<li><a href = "https://twitter.com/WKO_Missouri"><img class = "socialMediaLogo" src="twitter.png" ></a></li>
-			<li><a href = "https://www.facebook.com/wholekidsoutreach"><img class = "socialMediaLogo" src="facebook.png" ></a></li>
-		</ul>
+	    <div id="footer">
+			<ul class = "footerList">	
+				<li class="socfoot"><a href = "https://twitter.com/WKO_Missouri"><img class = "socialMediaLogo" src="footer/twitter.png" ></a></li>
+				<li class="socfoot"><a href = "https://www.facebook.com/wholekidsoutreach"><img class = "socialMediaLogo" src="footer/facebook.png" ></a></li>
+			</ul>
 			<p><a href="#">Contact Us</a> | <a href="#">Terms of Use</a> | 
 				<a href="http://wholekidsoutreach.org/wholekids">Site Map</a> | 
 				<a href="#">Privacy Statement</a><br> Copyright &copy; 2014. All Rights Reserved.</p>
-	</div>
+		</div>
 	</div>
 	</body>
 </html>

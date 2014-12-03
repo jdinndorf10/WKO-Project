@@ -1,12 +1,11 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Service Area</title>
+		<title>Volunteer</title>
 		<meta charset="utf-8">
-		<link href = "HelpNow.css" type="text/css" rel="stylesheet">
 		<link href = "WKO.css" type="text/css" rel="stylesheet">
+		<link href = "HelpNow.css" type="text/css" rel="stylesheet">
 		<link href = "footer.css" type="text/css" rel="stylesheet">
-		<script src="ServiceArea.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -27,27 +26,28 @@
 	</div>
 	</div>
     <div id="content">
-		<div id="para">
-			<h2>Service Area</h2>
-			<p>Whole Kids Outreach Address- 62143 Highway 21 Ellington, MO 63638 <br><br>
-			Whole Kids Outreach serves six rural counties in southeast Missouri: Butler, Carter, Iron, Reynolds, Shannon and Wayne (about 5,000 square miles).</p>
-			<img id="map" src="MoMap.png" alt="logo" width="400" height="400">
-			<div id="location" class="hidden">
-				<h3>Enter Zip Code to see if in Service Area</h3>
-				Zip Code: <input type="text" size="20" id="zip"/><br><br>
-				<button id="submit" value="Submit">Submit</button>
-			</div>
+		<div id="form" id="right">
+		<form action = "Volunteer.php" method="post">
+			<h2>Sign Up to Volunteer</h2>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Name: <input type="text" size="20" name="name"/><br>
+			Phone Number: <input type="text" size="20" name="number"/><br>
+			Email Address:  <input type="text" size="20" name="address"/><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="submit" value="Submit"/>
+		</form>
 		</div>
-	</div>
+		</div>
 	    <div id="footer">
-    	<ul class = "footerList">	
-			<li class="socfoot"><a href = "https://twitter.com/WKO_Missouri"><img class = "socialMediaLogo" src="footer/twitter.png" ></a></li>
-			<li class="socfoot"><a href = "https://www.facebook.com/wholekidsoutreach"><img class = "socialMediaLogo" src="footer/facebook.png" ></a></li>
-		</ul>
+			<ul class = "footerList">	
+				<li class="socfoot"><a href = "https://twitter.com/WKO_Missouri"><img class = "socialMediaLogo" src="footer/twitter.png" ></a></li>
+				<li class="socfoot"><a href = "https://www.facebook.com/wholekidsoutreach"><img class = "socialMediaLogo" src="footer/facebook.png" ></a></li>
+			</ul>
 			<p><a href="#">Contact Us</a> | <a href="#">Terms of Use</a> | 
 				<a href="http://wholekidsoutreach.org/wholekids">Site Map</a> | 
 				<a href="#">Privacy Statement</a><br> Copyright &copy; 2014. All Rights Reserved.</p>
-	</div>
+		</div>
 	</div>
 	</body>
 </html>

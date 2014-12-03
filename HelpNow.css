@@ -1,3 +1,13 @@
+h2{
+	margin-left: 20px;
+	font-size: 50px;
+	color: orange;
+	text-shadow: 4px 2px black;
+}
+p{
+	font-family: sans;
+	font-size: 20px;
+}
 .options{
 	text-decoration: underline;
 	font-size: 40px;
@@ -11,7 +21,7 @@
 	border: 4px dashed;
 	visibility: visible;
     position: absolute;
-    top: 280px;
+    top: 150px;
     right: 5px;
 }
 .show{
@@ -22,7 +32,7 @@
 	border: 2px solid;
 	visibility: visible;
 	position: absolute;
-    top: 300px;
+    top: 150px;
     right: 390px;
 	padding: 20px;
 }
@@ -32,8 +42,23 @@
 .hidden{
 	visibility: hidden;
 	position: absolute;
-    top: 280px;
+    top: 200px;
     right: 5px;
+}
+.link{
+	color: black;
+}
+.link:link{
+	text-decoration: underline;
+	color: black;
+	font-size: 24px;
+}
+.link:hover{
+	color: orange;
+}
+span:hover{
+	color: orange;
+	text-shadow: 2px 2px black;
 }
 #section{
 	background-color: white;
@@ -42,33 +67,16 @@
 	border: black solid 2px;
 	list-style-type: square;
 }
-.link:link{
-	text-decoration: underline;
-}
-.link:hover{
-	color: orange;
-}
 #help{
-	padding-top: 100px;
-}
-span:hover{
-	color: orange;
-	text-shadow: 2px 2px black;
-}
-h2{
-	margin-left: 20px;
-	font-size: 50px;
-	color: orange;
-	text-shadow: 4px 2px black;
+	padding-top: 20px;
 }
 #form{
 	width: 40%;
 	height: 200px;
 	font-size: 30px;
-	padding: 30px 30px 80px 30px;
+	padding: 30px 30px 110px 30px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
 	background-color: gray;
 	opacity: 0.8;
 	border: black 3px double;
@@ -80,12 +88,18 @@ h2{
 #para{
 	background-color: white;
 	opacity: 0.8;
-	width: 60%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	border: black solid 2px;
-	margin-left: 200px;
 	padding: 0px 40px 40px 40px;
 }
-p{
-	font-family: sans;
-	font-size: 20px;
+#left{
+	float:left;
+	display: inline;
+}
+#right{
+	float:right;
+	clear: right;
+	display: inline;
 }
