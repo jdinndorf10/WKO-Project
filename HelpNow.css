@@ -103,3 +103,8 @@ span:hover{
 	clear: right;
 	display: inline;
 }
+#location{
+	position: absolute;
+	top: 350px;
+	right: 300px;
+}

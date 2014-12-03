@@ -37,7 +37,7 @@
 				<li class = "menu"><a href="momsDay.php"><?= $three ?></a></li>
 				<li class = "menu"><a href="Swimming.php"><?= $four ?></a></li>
 				<li class = "menu"><a href="meetings.php"><?= $five ?></a></li>
-				<li class = "menu"><a href="volunteer.php"><?= $six ?></a></li>
+				<li class = "menu"><a href="volunteer2.php"><?= $six ?></a></li>
 				<li class = "menu"><a href="events.php"><?= $seven ?></a></li>
 
 			</ul>

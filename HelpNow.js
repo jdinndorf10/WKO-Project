@@ -9,17 +9,6 @@ function pageLoad(){
 	document.getElementById("specialEvents").onclick = specialEvents;
 	document.getElementById("thirdParty").onclick = thirdParty;
 	document.getElementById("planned").onclick = planned;
-	document.getElementById("map").onclick = map;
-}
-
-function map(){
-	alert("hi");
-	//document.getElementById("submit").onclick = checkLocation;
-	//document.getElementById("location").className = "visible";
-}
-
-function checkLocation(){
-	//var address = document.getElementById("address").value;
 }
 
 function volunteer(){
