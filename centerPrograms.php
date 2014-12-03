@@ -45,7 +45,7 @@
 		
 		<div class = "paragraphs">
 			<?php
-				$families = (glob("inputs/Swimming*.txt"));					
+				$families = (glob("inputs/horseRiding*.txt"));					
 						foreach ($families as $family) {
 						list($fam) = file($family);
 			?>

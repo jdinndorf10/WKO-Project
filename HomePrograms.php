@@ -26,26 +26,22 @@
 	
     <div id="content">
     
-	<div>		
+    	<div>		
 		<?php
-			list($one, $two, $three, $four, $five, $six, $seven) = file("inputs/centerPrograms.txt");
+			list($one, $two, $three) = file("inputs/homeVisitingPrograms.txt");
 		?>			
 			<ul id = "sidebar">			
 			
-				<li class = "menu"><a href="centerPrograms.php"><?= $one ?></a></li>
-				<li class = "menu"><a href="dayCamp.php"><?= $two ?></a></li>
-				<li class = "menu"><a href="momsDay.php"><?= $three ?></a></li>
-				<li class = "menu"><a href="Swimming.php"><?= $four ?></a></li>
-				<li class = "menu"><a href="meetings.php"><?= $five ?></a></li>
-				<li class = "menu"><a href="volunteer.php"><?= $six ?></a></li>
-				<li class = "menu"><a href="events.php"><?= $seven ?></a></li>
+				<li class = "menu"><a href="HomePrograms.php"><?= $one ?></a></li>
+				<li class = "menu"><a href="mothersProgram.php"><?= $two ?></a></li>
+				<li class = "menu"><a href="Maternal.php"><?= $three ?></a></li>
 
 			</ul>
 	</div>
 		
 		<div class = "paragraphs">
 			<?php
-				$families = (glob("inputs/Swimming*.txt"));					
+				$families = (glob("inputs/familyEnhancement*.txt"));					
 						foreach ($families as $family) {
 						list($fam) = file($family);
 			?>
