@@ -51,20 +51,15 @@ class FBgalleryProto {
 	 *
 	 * @param string $appId
 	 * @param string $appSecret
-	 * @param string $photoAlbumId
 	 *
 	 * @throws FacebookRequestException
 	 * @throws Exception
 	 */
-	public function __construct($appId,$appSecret,$photoAlbumId) {
+	public function __construct($appId,$appSecret) {
 		$this->appId = $appId;
 		$this->appSecret = $appSecret;
-		$this->photoAlbumId = $photoAlbumId;
 		
 		FacebookSession::setDefaultApplication($appId,$appSecret);
-		
-		$params = array();
-		$params["grant_type"] = 'client_credentials'; //need
 
 		$session = FacebookSession::newAppSession();
 		$this->session = $session;
@@ -115,20 +110,21 @@ class FBgalleryProto {
 		return $this->session;
 	}
 	
-	/*
+	/**
 	 * Uses created session and passed AlbumId to send a request to FB
 	 *
+	 * @param string path for Graph API request
 	 * @returns a graphObject containing response from Graph API
 	 *
 	 * @throws FacebookRequestException
 	 * @throws Exception
 	 */
-	public function albumGraphRequest() {
+	public function graphRequest($path) {
 		//create and send request
 			try {
 			$session = FBgalleryProto::getSession();
-			$albumId = FBgalleryProto::getPhotoAlbumId();
-			$request = new FacebookRequest($session, 'GET', '/'.$albumId.'/photos');
+			
+			$request = new FacebookRequest($session, 'GET', $path);
 			
 			$response = $request->execute();
 			
@@ -158,43 +154,74 @@ class FBgalleryProto {
 	}
 	
 	/**
-	 * TODO: currently just prints out all photos in album in img tage whereever called
+	 * TODO: currently just prints out all photos in album in img tag whereever called
 	 *
 	 */
-	public function printPhotos($PhotoList) {
-		//gets number of photos
-		$numberOfPhotos = $this->getNumberofPhotos($PhotoList);
-	
-		//printing photos
-		for ($i = 0; $i < $numberOfPhotos; $i = $i+1) {
-			//gets photo object
-			$picObj = $PhotoList->getProperty($i);
-			//gets photo info
-			$picLink = $picObj->getProperty('picture');
-			$picName = $picObj->getProperty('name');
+	public function printPhotos($photoArray) {
+		//prints photo is basic slideshow\
+		foreach ($photoArray as $photoLink) {
 			?>
-			<img src="<?=$picLink?>" alt="<?=$picName?>">
+				<img src="<?=$photoLink?>" alt="FB Album SlideShow">
 			<?php
 		}
-		
 	}
 	
 	/**
-	 * @returns PhotoList which contains an array of all the photos in the album
-	 * The array keys are 0- the number of photos in order they appear in the album.
+	 * @param string $photoAlbumId
+	 * @returns Array(integer->string) links to the photo's source with keys 0-# of photos
 	 */
-	public function getPhotos() {
+	public function getPhotos($photoAlbumId) {
 		//make graph api request for photos
-		$graphObject = $this->albumGraphRequest();
+		$this->photoAlbumId = $photoAlbumId;
+		
+		$graphObject = $this->graphRequest('/'.$photoAlbumId.'/photos');
 	
 		//holds integers 0-#ofphotos, each a photoObject
 		$PhotoList = $graphObject->getProperty('data');
-
-		return $PhotoList;
+		
+		//gets number of photos
+		$numberOfPhotos = $this->getNumberofPhotos($PhotoList);
+	
+		//assigning photo links into array
+		$photoArray = array();
+		for ($i = 0; $i < $numberOfPhotos; $i = $i+1) {
+			//gets photo object
+			$picObj = $PhotoList->getProperty($i);
+			//gets photo source link
+			$photoArray[$i] = $picObj->getProperty('source');
+		}
+		
+		return $photoArray;
 	}
 	
-
-
+	public function getStatus($pageId) {
+		$graphObject = $this->graphRequest('/'.$pageId.'/feed');
+		
+		//holds integers 0-#ofphotos, each an object
+		$feedObject = $graphObject->getProperty('data');
+		
+		//gets number of photos
+		$numberOfPhotos = $this->getNumberofPhotos($feedObject);
+		
+		echo '<ul>';
+		for ($i = 0; $i < $numberOfPhotos; $i = $i+1) {
+			//gets object
+			$Obj = $feedObject->getProperty($i);
+			//prints status's
+			$type = $Obj->getProperty('type');
+			if ($type == 'status') {
+				$msg = $Obj->getProperty('message');
+				$time = $Obj->getProperty('created_time');
+				//$time = date("M d Y h:ia",$time);
+				echo '<li>'.$time.' '.$msg.'</li>';
+			}
+		}
+		echo '<ul>';
+		
+		return $feedObject;
+	
+	}
+	
 }
 
 ?>
