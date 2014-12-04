@@ -20,7 +20,7 @@
 				<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
 				<li class="list"><a class="Buttons" href="contact.html">Contact</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
-				<li class="list"><a class="Buttons" href="volunteer.php">Volunteer</a></li>
+				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
               <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
 		</ul>
    </div>
@@ -30,11 +30,10 @@
     
     	<div>		
 		<?php
-			list($one, $two, $three) = file("inputs/programs.txt");
+			list($one, $two) = file("inputs/programs.txt");
 		?>			
 			<ul id = "sidebar">			
 			
-				<li class = "menu"><a class = "program" href="ServiceArea.html"><?= $three ?></a></li>
 				<li class = "menu"><a class = "program" href="CenterPrograms.php"><?= $one ?></a></li>
 				<li class = "menu"><a class = "program" href="HomePrograms.php"><?= $two ?></a></li>
 

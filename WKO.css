@@ -95,6 +95,7 @@ a.Buttons:link{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 117px;
+	overflow:scroll;
 }
 
 #WKOtext {
@@ -124,6 +125,7 @@ a.Buttons:link{
 	margin: auto;
 	background-color: #2E79FF;
 	text-align:center;
+	position:relative;
 	z-index:2;
 }
 
@@ -131,8 +133,6 @@ a.Buttons:link{
 width:200px;
 margin: auto;
 text-decoration: none;
-	z-index:2;
-	position:relative;
 }
 .socialMediaLogo {
 width:35px;
