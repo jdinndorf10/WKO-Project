@@ -18,8 +18,9 @@
 		</div>
    <div id="nav">
    		<ul>
-				<li class="list"><a class="Buttons" id="First" href="">About</a></li>
-				<li class="list"><a class="Buttons" href="programs.php">Programs</a></li>
+
+				<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
+				<li class="list"><a class="Buttons" href="contact.html">Contact</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
 				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
               <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
@@ -31,7 +32,7 @@
     
     	<div>		
 		<?php
-			list($one, $two) = file("inputs/programs.txt");
+			list($one, $two) = file("inputs/progNav.txt");
 		?>			
 			<ul id = "sidebar">			
 			
@@ -42,12 +43,31 @@
 	</div>
 		
 		<div class = "paragraphs">
+			<h3>Center Based Programs</h3>
 			<?php
-				list($one, $two) = file("inputs/program.txt");
+				$families = (glob("inputs/centerBased*.txt"));					
+						foreach ($families as $family) {
+						list($fam) = file($family);
 			?>
-				<p><?= $one?></p>
-				<p><?= $two?></p>
+				<p><?= $fam?></p>
 			
+			<?php
+			}
+			?>
+		</div>
+		
+		<div class = "paragraphs">
+			<h3>Home Visiting Programs</h3>
+			<?php
+				$families = (glob("inputs/homeVis*.txt"));					
+						foreach ($families as $family) {
+						list($fam) = file($family);
+			?>
+				<p><?= $fam?></p>
+			
+			<?php
+			}
+			?>
 		</div>	
     </div>
     

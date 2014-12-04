@@ -62,7 +62,6 @@ h1{
 
 a.Buttons:hover{
 	background-color: rgba(255,255,255,.80);
-	color:red;
 }
 
 .list{
@@ -167,8 +166,8 @@ list-style-type:none;
 	border: black solid 2px;
 	list-style-type: none;
 	text-decoration:none;
-	position: absolute;
-    top: 100px;
+	position: fixed;
+    top: 150px;
 }
 
 .paragraphs {
@@ -176,8 +175,7 @@ list-style-type:none;
 	opacity: 0.8;
 	font-size: 20px;
 	padding: 0px 10px 20px 10px;
-	margin-bottom:50px;
-	margin-right:50px;
+	margin: 15px 50px 50px 0px;
 	width: 50%;
 	border: 4px dashed;
 	visibility: visible;
@@ -226,5 +224,6 @@ a.program:hover {
 }
 
 a#homeLocator:hover {
-color: orange;
+	color: orange;
+	text-decoration:none;
 }
