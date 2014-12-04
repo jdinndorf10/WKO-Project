@@ -16,9 +16,6 @@ p{
 	border: white solid 2px;
 	box-shadow: 10px 10px 5px white;
 }
-ul{
-	text-decoration: none;
-}
 .orange{
 	text-decoration: underline;
 	font-size: 40px;
@@ -26,6 +23,9 @@ ul{
 	color: orange;
 	border: white solid 2px;
 	box-shadow: 10px 10px 5px white;
+}
+.bullet{
+	list-style-type: none;
 }
 .clicked{
 	text-decoration: underline;
@@ -36,7 +36,7 @@ ul{
 .box{
 	background-color: white;
 	opacity: 0.8;
-	margin: 80px;
+	margin: 120px;
 	width: 60%;
 	float: right;
 	border: 4px dashed;
@@ -48,7 +48,7 @@ ul{
 .show{
 	background-color: white;
 	opacity: 0.8;
-	margin: 80px;
+	margin: 120px;
 	float: right;
 	border: 2px solid;
 	visibility: visible;

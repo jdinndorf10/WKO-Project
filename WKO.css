@@ -59,7 +59,6 @@ h1{
 	text-decoration: none;
 	margin-left: 5px;
 }
-<<<<<<< Updated upstream
 
 a.Buttons:hover{
 	background-color: rgba(255,255,255,.80);
@@ -70,25 +69,26 @@ a.Buttons:hover{
 }
 
 a.Buttons:visited{
-=======
+	text-decoration: none;
+	color: black;
+	outline: none;
+	}
 .Buttons:link{
->>>>>>> Stashed changes
 	text-decoration: none;
 	color: black;
 	outline: none;
 }
-<<<<<<< Updated upstream
 
 a.Buttons:link{
-=======
+text-decoration: none;
+	color: black;
+	outline: none;
+}
 .Buttons:visited {
->>>>>>> Stashed changes
 	text-decoration: none;
 	color: black;
 	outline: none;
 }
-<<<<<<< Updated upstream
-=======
 .Buttons:hover{
 	background-color: rgba(255,255,255,.80);
 }
@@ -98,8 +98,6 @@ a.Buttons:link{
 .list{
 	display: inline;
 }
-
->>>>>>> Stashed changes
 
 #links{
 	display: inline;
@@ -215,7 +213,6 @@ padding-left: 10px;
     right: 5px;
  	visibility:hidden;
 }
-<<<<<<< Updated upstream
 
 .program {
 	text-decoration:none;
@@ -250,12 +247,11 @@ a.program:hover {
 a#homeLocator:hover {
 	color: orange;
 	text-decoration:none;
-=======
+}
 #sitemap {
 	display: inline;
 }
 #footernav {
 	margin-bottom: -10px;
 	margin-left: -5px;	
->>>>>>> Stashed changes
 }
