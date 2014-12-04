@@ -95,7 +95,7 @@ a.Buttons:link{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 117px;
-	overflow:scroll;
+	overflow:auto;
 }
 
 #WKOtext {
