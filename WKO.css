@@ -175,34 +175,24 @@ list-style-type:none;
 	background-color: white;
 	opacity: 0.8;
 	font-size: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 80px;
+	padding: 0px 10px 20px 10px;
+	margin-bottom:50px;
+	margin-right:50px;
 	width: 50%;
 	border: 4px dashed;
 	visibility: visible;
-    position: absolute;
+    position: relative;
+    float:right;
     top: 60px;
     right: 5px;
-    z-index:1;
     visibility:visible;
 }
 
 .hider {
-	background-color: white;
-	opacity: 0.8;
-	font-size: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 80px;
-	width: 50%;
-	border: 4px dashed;
-	visibility: visible;
     position: absolute;
     top: 60px;
     right: 5px;
-    z-index:1;
- visibility:hidden;
+ 	visibility:hidden;
 }
 
 .program {
