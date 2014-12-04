@@ -3,6 +3,9 @@
 <head>
 	<title>WKO's Programs</title>
 	<link href="WKO.css" rel="stylesheet">
+	<script src="homePrograms.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -14,11 +17,10 @@
 		</div>
    <div id="nav">
    		<ul>
-
-				<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
-				<li class="list"><a class="Buttons" href="contact.html">Contact</a></li>
+				<li class="list"><a class="Buttons" id="First" href="">About</a></li>
+				<li class="list"><a class="Buttons" href="programs.php">Programs</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
-				<li class="list"><a class="Buttons" href="volunteer.php">Volunteer</a></li>
+				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
               <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
 		</ul>
    </div>
@@ -32,14 +34,14 @@
 		?>			
 			<ul id = "sidebar">			
 			
-				<li class = "menu"><a href="HomePrograms.php"><?= $one ?></a></li>
-				<li class = "menu"><a href="mothersProgram.php"><?= $two ?></a></li>
-				<li class = "menu"><a href="Maternal.php"><?= $three ?></a></li>
+				<li class = "menu"> <span class = "program" id = "home"><?= $one ?></span></li>
+				<li class = "menu"> <span class = "program" id = "mothers"><?= $two ?></span></li>
+				<li class = "menu"> <span class = "program" id = "matern"><?= $three ?></span></li>
 
 			</ul>
 	</div>
 		
-		<div class = "paragraphs">
+		<div class = "hider" id = "enhancement">
 			<?php
 				$families = (glob("inputs/familyEnhancement*.txt"));					
 						foreach ($families as $family) {
@@ -51,6 +53,32 @@
 			}
 			?>
 		</div>	
+		
+		<div class = "hider" id = "resources">
+			<?php
+				$families = (glob("inputs/mothersResources*.txt"));					
+						foreach ($families as $family) {
+						list($fam) = file($family);
+			?>
+				<p><?= $fam?></p>
+			
+			<?php
+			}
+			?>
+		</div>	
+		
+		<div class = "hider" id = "maternal">
+			<?php
+				$families = (glob("inputs/maternalMother*.txt"));					
+						foreach ($families as $family) {
+						list($fam) = file($family);
+			?>
+				<p><?= $fam?></p>
+			
+			<?php
+			}
+			?>
+		</div>
     </div>
     
     <div id="footer">

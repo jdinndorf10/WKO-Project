@@ -3,6 +3,8 @@
 <head>
 	<title>WKO's Programs</title>
 	<link href="WKO.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -10,15 +12,14 @@
 <div id="wrapper">
 	<div id="header">
 		<div id="homeButton">
-			<a href="index.html">
+			<a id = "homeLocator" href="index.html">
 				<br>Whole Kids	Outreach
 			</a>
 		</div>
    <div id="nav">
    		<ul>
-
-				<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
-				<li class="list"><a class="Buttons" href="contact.html">Contact</a></li>
+				<li class="list"><a class="Buttons" id="First" href="">About</a></li>
+				<li class="list"><a class="Buttons" href="programs.php">Programs</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
 				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
               <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>

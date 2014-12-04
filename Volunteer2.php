@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 		<link href = "WKO.css" type="text/css" rel="stylesheet">
 		<link href = "HelpNow.css" type="text/css" rel="stylesheet">
-		<link href = "footer.css" type="text/css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>

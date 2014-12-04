@@ -175,7 +175,8 @@ list-style-type:none;
 	background-color: white;
 	opacity: 0.8;
 	font-size: 20px;
-	padding-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin: 80px;
 	width: 50%;
 	border: 4px dashed;
@@ -184,6 +185,24 @@ list-style-type:none;
     top: 60px;
     right: 5px;
     z-index:1;
+    visibility:visible;
+}
+
+.hider {
+	background-color: white;
+	opacity: 0.8;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 80px;
+	width: 50%;
+	border: 4px dashed;
+	visibility: visible;
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    z-index:1;
+ visibility:hidden;
 }
 
 .program {
@@ -191,11 +210,31 @@ list-style-type:none;
 	color:black;
 }
 
+.program:hover {
+	color: orange;
+	text-shadow: 2px 2px black;
+}
+
 a.program:hover {
 	color: orange;
 	text-shadow: 2px 2px black;
 }
 
+.colored {
+	color: orange;
+	text-shadow: 2px 2px black;
+}
+
+
 .program:visited {
 	color: black;
+}
+
+#homeLocator {
+	list-style-type: none;
+	text-decoration:none;
+}
+
+a#homeLocator:hover {
+color: orange;
 }
