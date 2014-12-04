@@ -19,7 +19,7 @@
    <div id="nav">
    		<ul>
 
-				<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
+				<li class="list"><a class="Buttons" id="First" href="">About</a></li>
 				<li class="list"><a class="Buttons" href="programs.php">Programs</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
 				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
