@@ -11,6 +11,27 @@ p{
 .options{
 	text-decoration: underline;
 	font-size: 40px;
+	background-color: navy;
+	color: white;
+	border: white solid 2px;
+	box-shadow: 10px 10px 5px white;
+}
+ul{
+	text-decoration: none;
+}
+.orange{
+	text-decoration: underline;
+	font-size: 40px;
+	background-color: navy;
+	color: orange;
+	border: white solid 2px;
+	box-shadow: 10px 10px 5px white;
+}
+.clicked{
+	text-decoration: underline;
+	font-size: 40px;
+	color: white;
+	border: white solid 2px;
 }
 .box{
 	background-color: white;
@@ -53,6 +74,9 @@ p{
 	color: black;
 	font-size: 24px;
 }
+.link#smallLink{
+	font-size: 16px;
+}
 .link:hover{
 	color: orange;
 }
@@ -61,9 +85,9 @@ span:hover{
 	text-shadow: 2px 2px black;
 }
 #section{
+	width: 25%;
 	background-color: white;
 	opacity: 0.8;
-	width: 25%;
 	border: black solid 2px;
 	list-style-type: square;
 }

@@ -1,18 +1,18 @@
 window.onload = pageLoad;
 			
 function pageLoad(){
-	document.getElementById("volunteer").onclick = volunteer;
-	document.getElementById("outright").onclick = outright;
-	document.getElementById("match").onclick = match;
-	document.getElementById("pledge").onclick = pledge;
-	document.getElementById("kind").onclick = kind;
-	document.getElementById("specialEvents").onclick = specialEvents;
-	document.getElementById("thirdParty").onclick = thirdParty;
-	document.getElementById("planned").onclick = planned;
+	document.getElementById("volunteer").onclick = volunteerF;
+	document.getElementById("outright").onclick = outrightF;
+	document.getElementById("match").onclick = matchF;
+	document.getElementById("pledge").onclick = pledgeF;
+	document.getElementById("kind").onclick = kindF;
+	document.getElementById("specialEvents").onclick = specialEventsF;
+	document.getElementById("thirdParty").onclick = thirdPartyF;
+	document.getElementById("planned").onclick = plannedF;
 }
 
-function volunteer(){
-	document.getElementById("volunteerB").className = "box";	
+function volunteerF(){
+	document.getElementById("volunteerB").className = "box";
 	document.getElementById("outrightB").className = "hidden";
 	document.getElementById("matchB").className = "hidden";
 	document.getElementById("pledgeB").className = "hidden";
@@ -20,9 +20,18 @@ function volunteer(){
 	document.getElementById("specialEventsB").className = "hidden";
 	document.getElementById("thirdPartyB").className = "hidden";
 	document.getElementById("plannedB").className = "hidden";
+	
+	document.getElementById("volunteer").className = "orange";
+	document.getElementById("outright").className = "options";
+	document.getElementById("match").className = "options";
+	document.getElementById("pledge").className = "options";
+	document.getElementById("kind").className = "options";
+	document.getElementById("specialEvents").className = "options";
+	document.getElementById("thirdParty").className = "options";
+	document.getElementById("planned").className = "options";
 }
 
-function outright(){
+function outrightF(){
 	document.getElementById("volunteerB").className = "hidden";	
 	document.getElementById("outrightB").className = "box";
 	document.getElementById("matchB").className = "hidden";
@@ -31,9 +40,18 @@ function outright(){
 	document.getElementById("specialEventsB").className = "hidden";
 	document.getElementById("thirdPartyB").className = "hidden";
 	document.getElementById("plannedB").className = "hidden";
+	
+	document.getElementById("volunteer").className = "options";
+	document.getElementById("outright").className = "orange";
+	document.getElementById("match").className = "options";
+	document.getElementById("pledge").className = "options";
+	document.getElementById("kind").className = "options";
+	document.getElementById("specialEvents").className = "options";
+	document.getElementById("thirdParty").className = "options";
+	document.getElementById("planned").className = "options";
 }
 
-function match(){
+function matchF(){
 	document.getElementById("volunteerB").className = "hidden";	
 	document.getElementById("outrightB").className = "hidden";
 	document.getElementById("matchB").className = "box";
@@ -42,9 +60,18 @@ function match(){
 	document.getElementById("specialEventsB").className = "hidden";
 	document.getElementById("thirdPartyB").className = "hidden";
 	document.getElementById("plannedB").className = "hidden";
+	
+	document.getElementById("volunteer").className = "options";
+	document.getElementById("outright").className = "options";
+	document.getElementById("match").className = "orange";
+	document.getElementById("pledge").className = "options";
+	document.getElementById("kind").className = "options";
+	document.getElementById("specialEvents").className = "options";
+	document.getElementById("thirdParty").className = "options";
+	document.getElementById("planned").className = "options";
 }
 
-function pledge(){
+function pledgeF(){
 	document.getElementById("volunteerB").className = "hidden";	
 	document.getElementById("outrightB").className = "hidden";
 	document.getElementById("matchB").className = "hidden";
@@ -52,10 +79,19 @@ function pledge(){
 	document.getElementById("kindB").className = "hidden";
 	document.getElementById("specialEventsB").className = "hidden";
 	document.getElementById("thirdPartyB").className = "hidden";
-	document.getElementById("plannedB").className = "hidden";												
+	document.getElementById("plannedB").className = "hidden";	
+
+	document.getElementById("volunteer").className = "options";
+	document.getElementById("outright").className = "options";
+	document.getElementById("match").className = "options";
+	document.getElementById("pledge").className = "orange";
+	document.getElementById("kind").className = "options";
+	document.getElementById("specialEvents").className = "options";
+	document.getElementById("thirdParty").className = "options";
+	document.getElementById("planned").className = "options";	
 }
 
-function planned(){
+function plannedF(){
 	document.getElementById("volunteerB").className = "hidden";	
 	document.getElementById("outrightB").className = "hidden";
 	document.getElementById("matchB").className = "hidden";
@@ -63,10 +99,19 @@ function planned(){
 	document.getElementById("kindB").className = "hidden";
 	document.getElementById("specialEventsB").className = "hidden";
 	document.getElementById("thirdPartyB").className = "hidden";
-	document.getElementById("plannedB").className = "box";												
+	document.getElementById("plannedB").className = "box";		
+
+	document.getElementById("volunteer").className = "options";
+	document.getElementById("outright").className = "options";
+	document.getElementById("match").className = "options";
+	document.getElementById("pledge").className = "options";
+	document.getElementById("kind").className = "options";
+	document.getElementById("specialEvents").className = "options";
+	document.getElementById("thirdParty").className = "options";
+	document.getElementById("planned").className = "orange";	
 }
 
-function kind(){	
+function kindF(){	
 	document.getElementById("volunteerB").className = "hidden";	
 	document.getElementById("outrightB").className = "hidden";
 	document.getElementById("matchB").className = "hidden";
@@ -74,10 +119,19 @@ function kind(){
 	document.getElementById("kindB").className = "box";
 	document.getElementById("specialEventsB").className = "hidden";
 	document.getElementById("thirdPartyB").className = "hidden";
-	document.getElementById("plannedB").className = "hidden";										
+	document.getElementById("plannedB").className = "hidden";	
+
+	document.getElementById("volunteer").className = "options";
+	document.getElementById("outright").className = "options";
+	document.getElementById("match").className = "options";
+	document.getElementById("pledge").className = "options";
+	document.getElementById("kind").className = "orange";
+	document.getElementById("specialEvents").className = "options";
+	document.getElementById("thirdParty").className = "options";
+	document.getElementById("planned").className = "options";	
 }
 
-function specialEvents(){
+function specialEventsF(){
 	document.getElementById("volunteerB").className = "hidden";	
 	document.getElementById("outrightB").className = "hidden";
 	document.getElementById("matchB").className = "hidden";
@@ -85,10 +139,19 @@ function specialEvents(){
 	document.getElementById("kindB").className = "hidden";
 	document.getElementById("specialEventsB").className = "box";
 	document.getElementById("thirdPartyB").className = "hidden";
-	document.getElementById("plannedB").className = "hidden";															
+	document.getElementById("plannedB").className = "hidden";	
+
+	document.getElementById("volunteer").className = "options";
+	document.getElementById("outright").className = "options";
+	document.getElementById("match").className = "options";
+	document.getElementById("pledge").className = "options";
+	document.getElementById("kind").className = "options";
+	document.getElementById("specialEvents").className = "orange";
+	document.getElementById("thirdParty").className = "options";
+	document.getElementById("planned").className = "options";		
 }
 
-function thirdParty(){
+function thirdPartyF(){
 	document.getElementById("volunteerB").className = "hidden";	
 	document.getElementById("outrightB").className = "hidden";
 	document.getElementById("matchB").className = "hidden";
@@ -96,5 +159,14 @@ function thirdParty(){
 	document.getElementById("kindB").className = "hidden";
 	document.getElementById("specialEventsB").className = "hidden";
 	document.getElementById("thirdPartyB").className = "box";
-	document.getElementById("plannedB").className = "hidden";														
+	document.getElementById("plannedB").className = "hidden";
+
+	document.getElementById("volunteer").className = "options";
+	document.getElementById("outright").className = "options";
+	document.getElementById("match").className = "options";
+	document.getElementById("pledge").className = "options";
+	document.getElementById("kind").className = "options";
+	document.getElementById("specialEvents").className = "options";
+	document.getElementById("thirdParty").className = "orange";
+	document.getElementById("planned").className = "options";	
 }
