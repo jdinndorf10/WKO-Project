@@ -2,13 +2,13 @@ $(document).ready(function() {
 
 		//ajax query to php to get photo array
 		var obj;
-		$.get("Slideshow/FBcaller.php", function(data){
+		$.get("FBcaller.php", function(data){
                 //alert("Data Loaded: " + data);
 				//$("#dataLoaded").html(data);
 				obj = JSON.parse(data);
+				alert("" + typeof(obj));
             },"json");
-			
-		
+		/*	
 		for (var index = 0; index < obj.length; ++index) {
 			var htmlS = $("#dataLoaded").html();
 			$("#dataLoaded").html(htmlS + "<br>" +obj[index]);
