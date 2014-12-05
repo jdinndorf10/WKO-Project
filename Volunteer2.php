@@ -8,6 +8,7 @@
 		<link href = "HelpNow.css" type="text/css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
+	<script src="Home.js" type="text/javascript"></script>
 	</head>
 
 	<body>

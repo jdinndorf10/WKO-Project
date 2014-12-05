@@ -7,6 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
+	<script src="Home.js" type="text/javascript"></script>
 </head>
 <body>
 
