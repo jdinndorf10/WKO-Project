@@ -194,6 +194,11 @@ class FBgalleryProto {
 		return $photoArray;
 	}
 	
+	/*
+	 *
+	 *@param  pageID of statuses one wants to querty
+	 *@return list of statuses
+	 */
 	public function getStatus($pageId) {
 		$graphObject = $this->graphRequest('/'.$pageId.'/feed');
 		

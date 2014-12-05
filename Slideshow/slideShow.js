@@ -1,39 +1,49 @@
 $(document).ready(function() {
 
 		//ajax query to php to get photo array
-		var obj;
+		var index = 0;
 		$.get("FBcaller.php", function(data){
-                //alert("Data Loaded: " + data);
-				//$("#dataLoaded").html(data);
-				obj = JSON.parse(data);
-				alert("" + typeof(obj));
-            },"json");
-		/*	
-		for (var index = 0; index < obj.length; ++index) {
-			var htmlS = $("#dataLoaded").html();
-			$("#dataLoaded").html(htmlS + "<br>" +obj[index]);
-			
-		}		
-			
-			
-			
-			
-            /*var slideimages = new Array()
+				try {
+					parsed = JSON.parse(JSON.stringify(data));
+				}catch(err) {
+					alert("Error: " + err.message);
+				}
+            },"json")
+			.fail(function(request, status, error) {
+				alert (request.responseText);
+			})
+			.done(function() {
+				parseData(parsed);
+			});
+		
+		function parseData(parsedJson) {
+			var arr = [];
 
-            function slideshowimages() {
-                for (i = 0; i < slideshowimages.arguments.length; i++) {
-                    slideimages[i] = new Image()
-                    slideimages[i].src = slideshowimages.arguments[i]
-                }
-            }
-
-            function gotoshow() {
-                if (!window.winslide || winslide.closed)
-                    winslide = window.open(slidelinks[whichlink])
-                else
-                    winslide.location = slidelinks[whichlink]
-                winslide.focus()
-            }*/
-
-   
+			//parsing json
+			for(var x in parsed){
+				arr.push(parsed[x]);
+			}
+			
+			//DEBUG: outputting array
+			/*for (var index = 0; index < arr.length; index++) {
+				var htmlS = $("#dataLoaded").html();
+				$("#dataLoaded").html(htmlS + "<br>" +arr[index]);
+			}*/	
+			
+			var intervalID = setInterval(function() {advanceSlideShow(arr)},1000);
+			
+		}	
+		
+		function advanceSlideShow(arr) {
+			//iterate
+			try {
+				index = index+1;
+				if (index > arr.length) {
+					index = 0;
+				}
+				$("#slideShow").attr("src",arr[index]);
+			}catch(err) {
+				$("#slideShow").attr("src","default.jpg");
+			}
+		}
 });

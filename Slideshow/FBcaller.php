@@ -10,14 +10,8 @@
 	//getting instance
 	$FBGallery = new FBgalleryProto($appId,$appSecret);
 	
-	
+	//gets photo links and returns json
 	$PhotoList = $FBGallery->getPhotos($photoAlbumId);
+	//echo gettype($PhotoList);
 	echo json_encode($PhotoList);
-	
-	//printing photos
-	//$FBGallery->printPhotos($PhotoList);
-	
-	//printing statuses
-	//$status = $FBGallery->getStatus($pageId);
-	
 ?>
