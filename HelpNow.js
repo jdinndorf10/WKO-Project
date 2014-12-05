@@ -21,7 +21,7 @@ function volunteerF(){
 	document.getElementById("thirdPartyB").className = "hidden";
 	document.getElementById("plannedB").className = "hidden";
 	
-	document.getElementById("volunteer").className = "orange";
+	document.getElementById("volunteer").className = "blue";
 	document.getElementById("outright").className = "options";
 	document.getElementById("match").className = "options";
 	document.getElementById("pledge").className = "options";
@@ -42,7 +42,7 @@ function outrightF(){
 	document.getElementById("plannedB").className = "hidden";
 	
 	document.getElementById("volunteer").className = "options";
-	document.getElementById("outright").className = "orange";
+	document.getElementById("outright").className = "blue";
 	document.getElementById("match").className = "options";
 	document.getElementById("pledge").className = "options";
 	document.getElementById("kind").className = "options";
@@ -63,7 +63,7 @@ function matchF(){
 	
 	document.getElementById("volunteer").className = "options";
 	document.getElementById("outright").className = "options";
-	document.getElementById("match").className = "orange";
+	document.getElementById("match").className = "blue";
 	document.getElementById("pledge").className = "options";
 	document.getElementById("kind").className = "options";
 	document.getElementById("specialEvents").className = "options";
@@ -84,7 +84,7 @@ function pledgeF(){
 	document.getElementById("volunteer").className = "options";
 	document.getElementById("outright").className = "options";
 	document.getElementById("match").className = "options";
-	document.getElementById("pledge").className = "orange";
+	document.getElementById("pledge").className = "blue";
 	document.getElementById("kind").className = "options";
 	document.getElementById("specialEvents").className = "options";
 	document.getElementById("thirdParty").className = "options";
@@ -108,7 +108,7 @@ function plannedF(){
 	document.getElementById("kind").className = "options";
 	document.getElementById("specialEvents").className = "options";
 	document.getElementById("thirdParty").className = "options";
-	document.getElementById("planned").className = "orange";	
+	document.getElementById("planned").className = "blue";	
 }
 
 function kindF(){	
@@ -125,7 +125,7 @@ function kindF(){
 	document.getElementById("outright").className = "options";
 	document.getElementById("match").className = "options";
 	document.getElementById("pledge").className = "options";
-	document.getElementById("kind").className = "orange";
+	document.getElementById("kind").className = "blue";
 	document.getElementById("specialEvents").className = "options";
 	document.getElementById("thirdParty").className = "options";
 	document.getElementById("planned").className = "options";	
@@ -146,7 +146,7 @@ function specialEventsF(){
 	document.getElementById("match").className = "options";
 	document.getElementById("pledge").className = "options";
 	document.getElementById("kind").className = "options";
-	document.getElementById("specialEvents").className = "orange";
+	document.getElementById("specialEvents").className = "blue";
 	document.getElementById("thirdParty").className = "options";
 	document.getElementById("planned").className = "options";		
 }
@@ -167,6 +167,6 @@ function thirdPartyF(){
 	document.getElementById("pledge").className = "options";
 	document.getElementById("kind").className = "options";
 	document.getElementById("specialEvents").className = "options";
-	document.getElementById("thirdParty").className = "orange";
+	document.getElementById("thirdParty").className = "blue";
 	document.getElementById("planned").className = "options";	
 }

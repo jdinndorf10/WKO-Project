@@ -1,7 +1,7 @@
 h2{
 	margin-left: 20px;
 	font-size: 50px;
-	color: orange;
+	color: #2EE2FF;
 	text-shadow: 4px 2px black;
 }
 p{
@@ -11,32 +11,26 @@ p{
 .options{
 	text-decoration: underline;
 	font-size: 40px;
-	background-color: navy;
-	color: white;
-	border: white solid 2px;
-	box-shadow: 10px 10px 5px white;
+	color: black;
 }
-ul{
-	text-decoration: none;
-}
-.orange{
+.blue{
 	text-decoration: underline;
 	font-size: 40px;
-	background-color: navy;
-	color: orange;
-	border: white solid 2px;
-	box-shadow: 10px 10px 5px white;
+	color: #2EE2FF;
+	text-shadow: 2px 2px black;
+}
+.bullet{
+	list-style-type: none;
 }
 .clicked{
 	text-decoration: underline;
 	font-size: 40px;
 	color: white;
-	border: white solid 2px;
 }
 .box{
 	background-color: white;
 	opacity: 0.8;
-	margin: 80px;
+	margin: 120px;
 	width: 60%;
 	float: right;
 	border: 4px dashed;
@@ -48,7 +42,7 @@ ul{
 .show{
 	background-color: white;
 	opacity: 0.8;
-	margin: 80px;
+	margin: 120px;
 	float: right;
 	border: 2px solid;
 	visibility: visible;
@@ -78,10 +72,10 @@ ul{
 	font-size: 16px;
 }
 .link:hover{
-	color: orange;
+	color: #2EE2FF;
 }
 span:hover{
-	color: orange;
+	color: #2EE2FF;
 	text-shadow: 2px 2px black;
 }
 #section{
