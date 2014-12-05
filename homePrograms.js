@@ -4,6 +4,7 @@ function pageLoad () {
 	document.getElementById("home").onclick = home;
 	document.getElementById("mothers").onclick = mothers;
 	document.getElementById("matern").onclick = maternal;
+	document.getElementById("homeButton").onclick = homes;
 }
 
 function home () {
@@ -31,4 +32,8 @@ function maternal () {
 	document.getElementById("mothers").className = "program";
 	document.getElementById("maternal").className = "paragraphs";
 	document.getElementById("matern").className = "colored";
+}
+
+function homes(){
+	window.location.href = "index.html";
 }

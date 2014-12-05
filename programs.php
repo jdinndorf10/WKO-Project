@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>WKO's Programs</title>
-    <script src="jquery-1.11.1.min.js"></script>
+    <script src="Home.js" type="text/javascript"></script>
 	<link href="WKO.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
@@ -12,19 +12,18 @@
 
 <div id="wrapper">
 	<div id="header">
-		<div id="homeButton" onClick="home()">
+		<div id="homeButton">
 				<br>Whole Kids	Outreach
 		</div>
-   <div id="nav">
+	<div id="nav">
    		<ul>
-
 				<li class="list"><a class="Buttons" href="about.html">About</a></li>
-				<li id="active"><a id="active" class="Buttons" href="programs.php">Programs</a></li>
+				<li class="list"><a class="Buttons" id = "active" href="programs.php">Programs</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
 				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
-              <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
+              	<li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
 		</ul>
-   </div>
+	</div>
 	</div>
 	
     <div id="content">
@@ -42,7 +41,7 @@
 	</div>
 		
 		<div class = "paragraphs">
-			<h3>Center Based Programs</h3>
+			<h3><?= $one ?></h3>
 			<?php
 				$families = (glob("inputs/centerBased*.txt"));					
 						foreach ($families as $family) {
@@ -56,7 +55,7 @@
 		</div>
 		
 		<div class = "paragraphs">
-			<h3>Home Visiting Programs</h3>
+			<h3><?= $two ?></h3>
 			<?php
 				$families = (glob("inputs/homeVis*.txt"));					
 						foreach ($families as $family) {
