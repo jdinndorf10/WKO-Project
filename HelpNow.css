@@ -1,7 +1,7 @@
 h2{
 	margin-left: 20px;
 	font-size: 50px;
-	color: orange;
+	color: #2EE2FF;
 	text-shadow: 4px 2px black;
 }
 p{
@@ -11,12 +11,13 @@ p{
 .options{
 	text-decoration: underline;
 	font-size: 40px;
-	color: navy;
+	color: black;
 }
-.orange{
+.blue{
 	text-decoration: underline;
 	font-size: 40px;
-	color: orange;
+	color: #2EE2FF;
+	text-shadow: 2px 2px black;
 }
 .bullet{
 	list-style-type: none;
@@ -71,10 +72,10 @@ p{
 	font-size: 16px;
 }
 .link:hover{
-	color: orange;
+	color: #2EE2FF;
 }
 span:hover{
-	color: orange;
+	color: #2EE2FF;
 	text-shadow: 2px 2px black;
 }
 #section{
