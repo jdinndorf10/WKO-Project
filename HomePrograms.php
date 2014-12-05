@@ -17,13 +17,13 @@
 		</div>
    <div id="nav">
    		<ul>
-				<li class="list"><a class="Buttons" id="First" href="">About</a></li>
-				<li class="list"><a class="Buttons" id = "active" href="programs.php">Programs</a></li>
+				<li class="list"><a class="Buttons" href="about.html">About</a></li>
+				<li class="list"><a class="Buttons" href="programs.php">Programs</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
 				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
-              <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
+              	<li class="list"><a class="Buttons" target="_blank" href="https://www.paypal.com/">Donate Now!</a></li>
 		</ul>
-   </div>
+	</div>
 	</div>
 	
     <div id="content">
