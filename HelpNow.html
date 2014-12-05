@@ -1,28 +1,30 @@
-
 <!doctype html>
 <html>
 	<head>
 		<title>Ways to Give</title>
 		<meta charset="utf-8">
+        <script src="jquery-1.11.1.min.js"></script>
+        <link href = "WKO.css" type="text/css" rel="stylesheet">
 		<link href = "HelpNow.css" type="text/css" rel="stylesheet">
-		<link href = "WKO.css" type="text/css" rel="stylesheet">
 		<link href = "footer.css" type="text/css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:500' rel='stylesheet' type='text/css'>
 		<script src="HelpNow.js" type="text/javascript"></script>
 	</head>
 
 	<body>
 	<div id="wrapper">
 	<div id="header">
-		<div id="homeButton">
+		<div id="homeButton" onClick="home()">
 			<br>Whole Kids	Outreach
 		</div>
 	<div id="nav">
    		<ul>
-			<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
-			<li class="list"><a class="Buttons" href="contact.html">Contact</a></li>
-			<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
-			<li class="list"><a class="Buttons" href="volunteer.php">Volunteer</a></li>
-            <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
+				<li class="list"><a class="Buttons" href="about.html">About</a></li>
+				<li class="list"><a class="Buttons" href="programs.php">Programs</a></li>
+				<li class="list"><a  id="active" class="Buttons" href="HelpNow.html">Help</a></li>
+				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
+              <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
 		</ul>
 	</div>
 	</div>
@@ -141,15 +143,13 @@
 		</div>
 		</div>
 	</div>
-	 <div id="footer">
-			<ul class = "footerList">	
-				<li class="socfoot"><a href = "https://twitter.com/WKO_Missouri"><img class = "socialMediaLogo" src="footer/twitter.png" ></a></li>
-				<li class="socfoot"><a href = "https://www.facebook.com/wholekidsoutreach"><img class = "socialMediaLogo" src="footer/facebook.png" ></a></li>
-			</ul>
-			<p><a href="#">Contact Us</a> | <a href="#">Terms of Use</a> | 
-				<a href="http://wholekidsoutreach.org/wholekids">Site Map</a> | 
-				<a href="#">Privacy Statement</a><br> Copyright &copy; 2014. All Rights Reserved.</p>
-		</div>
+	  <div id="footer">
+		</ul>
+			<ul id="footernav"><li class="socfoot"><a href = "https://twitter.com/WKO_Missouri"><img class = "socialMediaLogo" src="footer/twitter.png" ></a></li><li class="list"><button id="contact">Contact Us</button></li> |<li class="list"> <button id="tos" href="#">Terms of Use</button> </li>| 
+				<li class="list"><form id="sitemap" action="http://wholekidsoutreach.org/wholekids">
+    	<input type="submit" value="Site Map"></form> </li>| 
+				<li class="list"><button  href="#" id="priv">Privacy Statement</button></li><li class="socfoot"><a href = "https://www.facebook.com/wholekidsoutreach"><img class = "socialMediaLogo" src="footer/facebook.png" ></a></li></ul><br>&nbsp;&nbsp;&nbsp; Copyright &copy; 2014. All Rights Reserved.
+	</div>
 	</div>
 	</body>
 </html>
