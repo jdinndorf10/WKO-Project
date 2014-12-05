@@ -2,15 +2,20 @@ window.onload = pageLoad;
 			
 function pageLoad(){
 	document.getElementById("homeButton").onclick = home;
+	document.getElementById("homeButton").onmouseover = homeButtonHoverF;
+	document.getElementById("homeButton").onmouseout = homeButtonF;
 }
 
 function home(){
 	window.location.href = "index.html";
-	document.getElementById("homeButton").onmouseover = homeButtonHoverF;
 }
 
 function homeButtonHoverF(){
-	document.getElementById("homeButton").style.backgroundColor = "white";
+	document.getElementById("homeButton").id = "homeButtonHover";
+}
+
+function homeButtonF(){
+	document.getElementById("homeButtonHover").id = "homeButton";
 }
 
 $(document).ready(function(){  

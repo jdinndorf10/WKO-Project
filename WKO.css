@@ -45,6 +45,13 @@ h1{
 	color: black;
 	clear: left;
 }
+h1#home{
+	font-size: 80px;
+	color: white;
+	margin-left:auto;
+	margin-right:auto;
+	text-shadow: 6px 2px black;
+}
 #img{
 	display: inline;
 	float: left;
@@ -97,18 +104,19 @@ a.Buttons:visited{
 
 #WKOtext {
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 19px;
-	padding: 10px 10px 10px 10px;
+	font-size: 32px;
+	padding: 50px 50px 50px 50px;
 	margin-top: 25px;	
-	margin-left: 20px;
+	margin-left: 170px;
 	margin-right: 5px;
 	background-color: rgba(159,159,159,0.50);
 	color: #FFFFFF;
 	position:relative;
-	width: 600px;
+	width: 800px;
 	float: left;
 	z-index: 1;	
 	line-height: 30px;
+	text-shadow: 2px 1px black;
 }
 
 #newsbox {
