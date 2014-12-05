@@ -26,15 +26,14 @@ body{
 	padding: 0 10px 31px 10px;
 	background-color: #2EE2FF;
 }
-
-a#homeButton: hover{
+#homeButtonHover{
 	border: solid black 2px;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 34px;
 	margin-right: 65%;
 	text-align: center;
 	padding: 0 10px 31px 10px;
-	cbackground-color: rgba(255,255,255,.80);
+	background-color: white;
 }
 #nav {
 	float: right;
@@ -79,11 +78,6 @@ a.Buttons:visited{
 	color: black;
 	outline: none;
 }
-
-.list{
-	display: inline;
-}
-
 #links{
 	display: inline;
 	clear: right;
