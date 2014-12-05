@@ -68,36 +68,18 @@ a.Buttons:hover{
 	display: inline;
 }
 
-<<<<<<< HEAD
-=======
 a.Buttons:visited{
 	text-decoration: none;
 	color: black;
 	outline: none;
 	}
->>>>>>> 17f718fb0cf6e9e1a759dde5f02795fc0e6e99fb
+
 .Buttons:link{
 	text-decoration: none;
 	color: black;
 	outline: none;
 }
 
-a.Buttons:link{
-<<<<<<< HEAD
-=======
-text-decoration: none;
-	color: black;
-	outline: none;
-}
-.Buttons:visited {
->>>>>>> 17f718fb0cf6e9e1a759dde5f02795fc0e6e99fb
-	text-decoration: none;
-	color: black;
-	outline: none;
-}
-.Buttons:hover{
-	background-color: rgba(255,255,255,.80);
-}
 .list{
 	display: inline;
 }
@@ -160,20 +142,6 @@ width:35px;
 height:35px;
 }
 
-a.menu :visited {
-color: black;
-text-decoration: none;
-}
-
-a.menu :hover {
-text-decoration: none;
-color:#990099;
-}
-
-menu {
-text-decoration:none;
-}
-
 .socfoot {
 display: inline;
 text-decoration:none;
@@ -219,24 +187,23 @@ padding-left: 10px;
 
 .program {
 	text-decoration:none;
-	color:black;
+	list-style-type: none;
 }
 
 .program:hover {
-	color: orange;
+	color: #2EE2FF;
 	text-shadow: 2px 2px black;
 }
 
 a.program:hover {
-	color: orange;
+	color: #2EE2FF;
 	text-shadow: 2px 2px black;
 }
 
 .colored {
-	color: orange;
+	color: #2EE2FF;
 	text-shadow: 2px 2px black;
 }
-
 
 .program:visited {
 	color: black;
@@ -247,20 +214,19 @@ a.program:hover {
 	text-decoration:none;
 }
 
-a#homeLocator:hover {
-	color: orange;
+#homeLocator:hover {
+	color: #2EE2FF;
 	text-decoration:none;
 }
+
 #sitemap {
 	display: inline;
 }
+
 #footernav {
 	margin-bottom: -10px;
 	margin-left: -5px;	
-<<<<<<< HEAD
 }
 #active {
 	background-color: 	rgba(255,255,255,.80);
-=======
->>>>>>> 17f718fb0cf6e9e1a759dde5f02795fc0e6e99fb
 }

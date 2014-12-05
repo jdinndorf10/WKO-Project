@@ -13,14 +13,12 @@
 <div id="wrapper">
 	<div id="header">
 		<div id="homeButton">
-			<a id = "homeLocator" href="index.html">
 				<br>Whole Kids	Outreach
-			</a>
 		</div>
    <div id="nav">
    		<ul>
 				<li class="list"><a class="Buttons" id="First" href="">About</a></li>
-				<li class="list"><a class="Buttons" href="programs.php">Programs</a></li>
+				<li class="list"><a class="Buttons" id = "active" href="programs.php">Programs</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
 				<li class="list"><a class="Buttons" href="volunteer2.php">Volunteer</a></li>
               <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>

@@ -8,6 +8,7 @@ function pageLoad () {
 	document.getElementById("hosting").onclick = host;
 	document.getElementById("volunteer").onclick = vol;
 	document.getElementById("community").onclick = comm;
+	document.getElementById("homeButton").onclick = home;
 }
 
 function ride () {
@@ -127,4 +128,8 @@ function comm () {
 	document.getElementById("volunteer").className = "program";
 	document.getElementById("events").className = "paragraphs";
 	document.getElementById("community").className = "colored";
+}
+
+function home(){
+	window.location.href = "index.html";
 }
