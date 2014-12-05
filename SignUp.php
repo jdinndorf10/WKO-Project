@@ -6,6 +6,8 @@
 		<link href = "WKO.css" type="text/css" rel="stylesheet">
 		<link href = "HelpNow.css" type="text/css" rel="stylesheet">
 		<link href = "footer.css" type="text/css" rel="stylesheet">
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="Home.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -20,14 +22,14 @@
 				<li class="list"><a class="Buttons" id="First" href="programs.php">About</a></li>
 				<li class="list"><a class="Buttons" href="contact.html">Contact</a></li>
 				<li class="list"><a class="Buttons" href="HelpNow.html">Help</a></li>
-				<li class="list" id="active"><a class="Buttons" href="volunteer.php">Volunteer</a></li>
+				<li class="list"><a id="active" class="Buttons" href="Volunteer.php">Volunteer</a></li>
               <li class="list"><a class="Buttons" href="https://www.paypal.com/">Donate Now!</a></li>
 		</ul>
 	</div>
 	</div>
     <div id="content">
 		<div id="form" id="right">
-		<form action = "Volunteer.php" method="post">
+		<form action = "Volunteer2.php" method="post">
 			<h2>Sign Up to Volunteer</h2>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			Name: <input type="text" size="20" name="name"/><br>
