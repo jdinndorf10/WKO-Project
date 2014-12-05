@@ -68,6 +68,14 @@ a.Buttons:hover{
 	display: inline;
 }
 
+<<<<<<< HEAD
+=======
+a.Buttons:visited{
+	text-decoration: none;
+	color: black;
+	outline: none;
+	}
+>>>>>>> 17f718fb0cf6e9e1a759dde5f02795fc0e6e99fb
 .Buttons:link{
 	text-decoration: none;
 	color: black;
@@ -75,6 +83,14 @@ a.Buttons:hover{
 }
 
 a.Buttons:link{
+<<<<<<< HEAD
+=======
+text-decoration: none;
+	color: black;
+	outline: none;
+}
+.Buttons:visited {
+>>>>>>> 17f718fb0cf6e9e1a759dde5f02795fc0e6e99fb
 	text-decoration: none;
 	color: black;
 	outline: none;
@@ -241,7 +257,10 @@ a#homeLocator:hover {
 #footernav {
 	margin-bottom: -10px;
 	margin-left: -5px;	
+<<<<<<< HEAD
 }
 #active {
 	background-color: 	rgba(255,255,255,.80);
+=======
+>>>>>>> 17f718fb0cf6e9e1a759dde5f02795fc0e6e99fb
 }
