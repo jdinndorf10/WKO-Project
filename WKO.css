@@ -114,6 +114,7 @@ a.Buttons:visited{
 	width: 600px;
 	float: left;
 	z-index: 1;	
+	line-height: 30px;
 }
 
 #newsbox {

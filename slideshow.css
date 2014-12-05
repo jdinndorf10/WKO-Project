@@ -1,16 +1,16 @@
-#slideshow {
-	margin-top: 20px;
-	margin-left: 80px;
-	height: 400px;
-	width: 600px;
-	float: left;
-	border-style: solid;
-	border-width: 4px;
-	border-color: #000000;
-}
+	#slideshow {
+		margin-top: 20px;
+		margin-left: 80px;
+		height: 400px;
+		width: 600px;
+		float: left;
+		border-style: solid;
+		border-width: 4px;
+		border-color: #000000;
+	}
 
-#paraAbout {
-	margin-top: 34px;
-	margin-left: 80px;
-	width: 500px;
-}
+	#paraAbout {
+		margin-top: 34px;
+		margin-left: 80px;
+		width: 500px;
+	}
