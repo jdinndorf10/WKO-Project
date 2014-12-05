@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 		//ajax query to php to get photo array
 		var index = 0;
-		$.get("FBcaller.php", function(data){
+		$.get("Slideshow/FBcaller.php", function(data){
 				try {
 					parsed = JSON.parse(JSON.stringify(data));
 				}catch(err) {
@@ -30,7 +30,7 @@ $(document).ready(function() {
 				$("#dataLoaded").html(htmlS + "<br>" +arr[index]);
 			}*/	
 			
-			var intervalID = setInterval(function() {advanceSlideShow(arr)},1000);
+			var intervalID = setInterval(function() {advanceSlideShow(arr)},5000);
 			
 		}	
 		
@@ -41,9 +41,9 @@ $(document).ready(function() {
 				if (index > arr.length) {
 					index = 0;
 				}
-				$("#slideShow").attr("src",arr[index]);
+				$("#slideshow").attr("src",arr[index]);
 			}catch(err) {
-				$("#slideShow").attr("src","default.jpg");
+				$("#slideshow").attr("src","Slideshow/default.jpg");
 			}
 		}
 });
