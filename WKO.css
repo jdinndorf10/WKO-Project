@@ -154,7 +154,7 @@ padding-right: 10px;
 padding-left: 10px;
 }
 
-#sidebar {
+.sidebar {
 	font-size: 40px;
 	background-color: white;
 	opacity: 0.8;
@@ -187,6 +187,12 @@ padding-left: 10px;
     top: 60px;
     right: 5px;
  	visibility:hidden;
+}
+
+.hideBar {
+visibility:hidden;
+position:absolute;
+top:0px;
 }
 
 .program {
