@@ -2,9 +2,6 @@ window.onload = pageLoad;
 			
 function pageLoad(){
 	document.getElementById("map").onclick = show;
-	document.getElementById("homeButton").onclick = home;
-	document.getElementById("homeButton").onmouseover = homeButtonHoverF;
-	document.getElementById("homeButton").onmouseout = homeButtonF;
 }
 
 function show(){
@@ -28,26 +25,106 @@ function checkLocation(){
 
 }
 
-function home(){
-	window.location.href = "index.html";
+
+<!--Google maps code-->
+var zoomedIn = false;
+
+function initialize() {
+    var stylez = [
+      {
+        featureType: "all",
+        stylers: [
+          { hue: "#0000ff" },
+          { saturation: -75 }
+        ]
+      },
+      {
+        featureType: "poi",
+        elementType: "label",
+        stylers: [
+          { visibility: "off" }
+        ]
+      }
+    ];
+
+    var latlng = new google.maps.LatLng(37.194687, -90.952620), //WKO center
+    
+        mapOptions = {
+            mapTypeControlOptions: {
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP, "Edited"] 
+            },
+            zoom: 10,
+            center: latlng
+        },
+        
+        map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions),
+        
+        styledMapType = new google.maps.StyledMapType(stylez, {name: "Edited"}),
+        
+        marker = new google.maps.Marker({
+            position: latlng, 
+            map: map, 
+            animation: google.maps.Animation.DROP,
+            title:"Whole Kids Outreach Center"
+        }),
+        
+        infowindow = null;
+        
+        map.mapTypes.set("Edited", styledMapType);
+        map.setMapTypeId('Edited');
+    
+    function toggleBounce () {
+        if (marker.getAnimation() != null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+    
+    function smoothZoom (map, level, cnt, mode) {
+
+		// If mode is zoom in
+		if(mode == true) {
+
+			if (cnt >= level) {
+				return;
+			}
+			else {
+				var z = google.maps.event.addListener(map, 'zoom_changed', function(event){
+					google.maps.event.removeListener(z);
+					smoothZoom(map, level, cnt + 1, true);
+				});
+				setTimeout(function(){map.setZoom(cnt)}, 80);
+			}
+		} else {
+			if (cnt <= level) {
+				return;
+			}
+			else {
+				var z = google.maps.event.addListener(map, 'zoom_changed', function(event) {
+					google.maps.event.removeListener(z);
+					smoothZoom(map, level, cnt - 1, false);
+				});
+				setTimeout(function(){map.setZoom(cnt)}, 80);
+			}
+		}
+	}    
+    google.maps.event.addListener(marker, 'click', function () {
+        toggleBounce();
+        setTimeout(toggleBounce, 1500);
+    });
+	
+    $('.btn').click(function(event) {
+        if(!zoomedIn) {
+				smoothZoom(map, 20, map.getZoom(), true);
+				zoomedIn = true;
+                $(this).text('Zoom');
+			} else {
+				smoothZoom(map, 9, map.getZoom(), false);
+				zoomedIn = false;
+                $(this).text('Zoom');
+			} 
+    });
 }
 
-function homeButtonHoverF(){
-	document.getElementById("homeButton").id = "homeButtonHover";
-}
-
-function homeButtonF(){
-	document.getElementById("homeButtonHover").id = "homeButton";
-}
-
-$(document).ready(function(){  
-	$('#contact').click(function () {
-		alert('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel porta metus. Donec pellentesque risus metus, quis lobortis ex elementum at. Proin ut arcu urna. Curabitur facilisis imperdiet velit eget dapibus. Mauris facilisis tristique eros eu pellentesque. Ut ut congue est. Proin tristique neque id nulla vehicula, nec tempus quam aliquam. Sed vitae blandit neque, at volutpat urna. Duis aliquam tempus turpis et hendrerit. Etiam felis metus, venenatis ac tincidunt eget, ullamcorper a dui. In sodales quam sed maximus gravida.');});});
-
-$(document).ready(function(){ 
-	$('#tos').click(function () {
-		alert('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel porta metus. Donec pellentesque risus metus, quis lobortis ex elementum at. Proin ut arcu urna. Curabitur facilisis imperdiet velit eget dapibus. Mauris facilisis tristique eros eu pellentesque. Ut ut congue est. Proin tristique neque id nulla vehicula, nec tempus quam aliquam. Sed vitae blandit neque, at volutpat urna. Duis aliquam tempus turpis et hendrerit. Etiam felis metus, venenatis ac tincidunt eget, ullamcorper a dui. In sodales quam sed maximus gravida.');});});
-
-$(document).ready(function(){ 
-	$('#priv').click(function () {
-		alert('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel porta metus. Donec pellentesque risus metus, quis lobortis ex elementum at. Proin ut arcu urna. Curabitur facilisis imperdiet velit eget dapibus. Mauris facilisis tristique eros eu pellentesque. Ut ut congue est. Proin tristique neque id nulla vehicula, nec tempus quam aliquam. Sed vitae blandit neque, at volutpat urna. Duis aliquam tempus turpis et hendrerit. Etiam felis metus, venenatis ac tincidunt eget, ullamcorper a dui. In sodales quam sed maximus gravida.');});});
+initialize();
